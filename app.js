@@ -21,7 +21,7 @@ stream.on('nowPlaying', (track) => {
         largeImageKey: config.icons.logo,
         largeImageText: `🎵 ${track.album['#text']}`,
         smallImageKey: config.icons.user,
-        smallImageText: `Discord.fm v${require('./package.json').version}`
+        smallImageText: `Discord.fm v${require('./package.json').version} by htbrown, forked for iTunes by bgpvp.`
     })
     log.info(`Now Playing: ${track.name} - ${track.artist['#text']}`);
 });
